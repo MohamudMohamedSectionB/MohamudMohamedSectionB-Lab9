@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Data Display</title>
-    <link rel="stylesheet" href="styles1.css">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>API Data Display</h1>
-        <div> id="data-container"></div>
-    </div>
-
-    <script src="API.js"></script>
+    <header>
+        <h1>Photo Gallery</h1>
+        <div class="filters">
+            <button class="filter-button" data-category="all">All</button>
+            <button class="filter-button" data-category="nature">Nature</button>
+            <button class="filter-button" data-category="city">City</button>
+            <button class="filter-button" data-category="people">People</button>
+        </div>
+    </header>
+    <section class="gallery">
+        <img src="Anime.jpg"> 
+        <img src="Stripes.jpg">
+        <img src="Basketball.jpg">
+        <img src="IPhone Wallpaper.jpg">
+        <img src="World Cup.jpg">
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.js"></script>
 </body>
 </html>
